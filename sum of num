@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,sum;
+    while(n!=-1)
+    {  
+    cin>>n;
+    sum =sum +n;
+    }
+cout<<sum+1;
+}
