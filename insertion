@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,p,v;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cin>>p>>v;
+    if(p>=n)
+    {
+        cout<<"invalid input";
+    }
+    else{
+    for(int i=n-1;i>=p-1;i--)
+    {
+        a[i+1]=a[i];
+    }
+    a[p-1]=v;
+    for(int i=0;i<=n;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+}}
